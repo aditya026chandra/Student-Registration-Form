@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-card">
+    <h2>Student Registration Form</h2>
+
+    <form>
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" placeholder="Enter your full name">
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <!-- Course Selection -->
+      <div class="form-group">
+        <label for="course">Course/Program:</label>
+        <select id="course">
+          <option value="" disabled selected>Select your course</option>
+          <option value="cs">Computer Science</option>
+          <option value="it">Information Technology</option>
+          <option value="se">Software Engineering</option>
+        </select>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+      </div>
+
+      <!-- Technical Skills / Interests -->
+      <div class="form-group">
+        <label>Technical Skills / Interests:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="skills" value="html-css"> HTML/CSS</label>
+          <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+          <label><input type="checkbox" name="skills" value="python"> Python</label>
+        </div>
+      </div>
+
+      <!-- Form Buttons -->
+      <div class="button-group">
+        <button type="reset" class="btn-reset">Reset</button>
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
